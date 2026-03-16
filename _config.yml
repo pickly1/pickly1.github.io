@@ -1,0 +1,132 @@
+# Site Settings
+locale                   : "ko-KR"
+title                    : "픽리의 쇼핑 추천 — 오늘의 가성비 픽"
+title_separator          : "-"
+subtitle                 : "쿠팡추천, 가성비상품, 쇼핑추천, 할인정보, 베스트상품"
+name                     : ""
+description              : "가성비 좋은 상품만 골라 소개하는 쇼핑 추천 블로그입니다. 쿠팡 베스트 상품과 할인 아이템을 매일 업데이트합니다."
+url                      : "https://pickly1.github.io"
+baseurl                  : ""
+repository               : "pickly1/pickly1.github.io"
+
+# SEO
+og_image                 : "/assets/images/og-default.webp"
+
+# Search Engine Verification (서치어드바이저 등록 후 채워넣기)
+google_site_verification : ""
+naver_site_verification  : ""
+bing_site_verification   : ""
+
+# Site Author
+author:
+  name             : ""
+  bio              : ""
+  location         : ""
+
+# Site Footer
+footer:
+  links: []
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README
+  - tmp
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Outputting
+permalink: /posts/:title/
+paginate: 12
+paginate_path: /page:num/
+timezone: Asia/Seoul
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-include-cache
+
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-include-cache
+
+# Theme
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin    : "default"
+
+# Archives
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# HTML Compression
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      read_time: true
+      comments: false
+      share: true
+      related: true
+      show_date: true
