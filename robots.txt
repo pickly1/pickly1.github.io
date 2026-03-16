@@ -4,4 +4,4 @@ User-agent: *
 Allow: /
 Disallow: /assets/
 
-Sitemap: {{ site.url }}{{ site.baseurl }}/sitemap.xml
+Sitemap: https://pickly1.github.io/sitemap.xml
